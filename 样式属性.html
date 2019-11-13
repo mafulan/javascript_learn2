@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div1{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <script>
+        var oDiv = document.getElementById("div1");
+        oDiv.style.width = "300px";//添加样式--行间样式
+        oDiv.style.backgroundColor = "blue";
+        //替代样式--依然是行间样式
+        oDiv.style.cssText = "width:300px;background-color:yellow;";
+         oDiv.style.cssText = "width:300px;";
+    </script>
+</body>
+</html>

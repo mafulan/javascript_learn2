@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+   
+    </div>
+    <textarea name="" id="te" cols="30" rows="10"></textarea>
+    <button id="btn">按钮</button>
+    <script>
+        //点击按钮时，将文本域中的值在div1的内容中展示出来
+        var oD = document.getElementById("div1");
+        var oT = document.getElementById("te");
+        var oB = document.getElementById("btn");
+          oB.onclick = function(){
+              oD.innerHTML = oT.value;
+          }
+    </script>
+
+    
+</body>
+</html>
