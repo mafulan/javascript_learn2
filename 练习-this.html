@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //创建一个全局属性(var a = "tw")，创建一个对象(obj)即其属性(obj.a = "to")和方法(obj.saya = function(){console.log(this.a)})，说出调用该方法时this是谁
+    var a = "tw";
+    var obj = {};
+    obj.a = "to";
+    obj.saya = function (){
+        console.log(this.a);
+    }
+    var saya = obj.saya;
+    // obj.saya();
+    saya();
+    </script>
+</body>
+</html>

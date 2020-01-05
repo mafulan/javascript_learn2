@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Number() 将其他数据类型转换成数字的方法
+    var s1 = "100";
+    var s2 = "001";
+    var s3 = "a11";
+    var s4 = "11a";
+    // 非数字字符串用Number方法会得到NaN
+    // console.log(Number(s1),Number(s2),Number(s3),Number(s4));
+    // console.log(typeof(NaN));
+    // console.log(Number(null));  //0
+    // console.log(Number(undefined));  //NaN
+    var o1 = {};
+    var o2 = document.body;
+    // var arr = [];  // 0 
+    // var arr = [2];  //此数字
+    // var arr = ["a2"];  //字符串等于字符串方法
+    // var arr = [null];  //0
+    var arr = [undefined];  //0
+    // console.log(Number(o1));  //NaN
+    // console.log(Number(o2));  //NaN
+    console.log(Number(arr));
+    </script>
+</body>
+</html>
